@@ -20,6 +20,8 @@ library(ggplot2)
 theme_set(theme_bw())
 knitr::opts_chunk$set(echo = FALSE) # Prevents code from showing in the pdf.
 ```
+# Introduction
+This report will detail how income level, education , and crime correlate with price per sqft (using zipcodes). 
 
 # Importing New york housing market
 
