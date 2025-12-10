@@ -1,0 +1,48 @@
+---
+title: "Actualshit"
+author: "Richard Huang"
+date: "2025-12-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r}
+library(dplyr)
+library(arrow)
+library(ggplot2)
+```
+
+# Importing New york housing market
+
+```{r}
+ny_population <- read_csv("New_York_City_Population_By_Neighborhood.csv") 
+ny_population
+
+ny_population_new <- ny_population |> rename( NTA_Name = `NTA Name`) |> filter(NTA_Name == "")
+ny_population_new
+
+```
+
+# Importing New york crime data
+
+```{r}
+ny_crime <-read_csv("NYPDDATA.csv")
+```
+
+# Imporing new york income by zipcode
+
+```{r}
+read_csv("NYPDDATA.csv")
+```
+
+# Importing highschool (SAT) scores in newyork city 
+
+```{r}
+hs_scores <-read_csv("scores.csv")
+
+```
