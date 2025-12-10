@@ -1,6 +1,8 @@
 ---
 title: "Actualshit"
 author: "Richard Huang"
+"Austin Liu" 169135314
+"Harry Zhu"
 date: "2025-12-10"
 output: html_document
 ---
@@ -15,6 +17,8 @@ knitr::opts_chunk$set(echo = TRUE)
 library(dplyr)
 library(arrow)
 library(ggplot2)
+theme_set(theme_bw())
+knitr::opts_chunk$set(echo = FALSE) # Prevents code from showing in the pdf.
 ```
 
 # Importing New york housing market
